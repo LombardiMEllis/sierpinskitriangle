@@ -14,8 +14,8 @@ public class Sierpinski extends JFrame {
 	
 	//first triangle vertices
 	static Point p1 = new Point (BUFFER, HEIGHT);
-	static Point p2 = new Point (WIDTH, HEIGHT);
-	static Point p3 = new Point (BUFFER + WIDTH/2, (int)(HEIGHT - (WIDTH/2 * Math.sqrt(3))));
+	static Point p2 = new Point (BUFFER + WIDTH, HEIGHT);
+	static Point p3 = new Point ((BUFFER + WIDTH)/2, (int)(HEIGHT - (WIDTH/2 * Math.sqrt(3))));
 	
 	public Sierpinski(){
         initGUI();
