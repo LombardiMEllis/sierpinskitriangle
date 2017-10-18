@@ -10,6 +10,8 @@ public class Sierpinski extends JFrame {
 	public static int HEIGHT = 500;
 	public static int BUFFER = 50;
 	
+	public static int iterations = 8;
+	
 	public static Graphics g;
 	
 	//first triangle vertices
@@ -34,7 +36,6 @@ public class Sierpinski extends JFrame {
 	
 	
 	private void initGUI(){
-
         JPanel triangles = new JPanel();
         add(triangles, BorderLayout.PAGE_END);
         
@@ -43,7 +44,7 @@ public class Sierpinski extends JFrame {
 	public void paint(Graphics g){
 		g.setColor(Color.BLUE);
 		
-		drawSierpinski(8, p1, p2, p3, g);
+		drawSierpinski(iterations, p1, p2, p3, g);
 	}
 	
 	public void drawSierpinski(int i, Point p1, Point p2, Point p3, Graphics g) {
